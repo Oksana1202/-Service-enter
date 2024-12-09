@@ -1,0 +1,310 @@
+@media (width <= 768px) {
+  .container2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+  }
+
+  .modal-content2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: var(--modal-width);
+    height: 100vh;
+    background-color: #fff;
+    border-left: 1px solid rgba(65, 246, 216, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .brd3 {
+    background-color: white;
+    padding: 0 10px;
+    width: 320px;
+  }
+
+  .burger1_img {
+    margin-top: 20px;
+  }
+
+  .burger4 {
+    left: -100px;
+    background-color: #fff;
+    border: none;
+  }
+
+  .title {
+    font-family: TT Lakes;
+    font-size: 24px;
+    width: 100%;
+  }
+  .title__text {
+    padding: 0 20px;
+    border-left: 3px solid var(--secondary-color);
+    margin-left: -10px;
+  }
+
+  .feedback {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-size: 14pt;
+  }
+
+  .phone-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 288px;
+    padding: 10px 10px;
+    height: 48px;
+  }
+
+  .phone-input select {
+    margin-right: 10px;
+    border: none;
+    border-right: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .phone-input input[type='tel'] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .phone-input input[type='tel']::placeholder {
+    color: var(--text-color);
+  }
+
+  .input-form-ph {
+    width: 18%;
+    font-family: TT Lakes;
+    font-size: var(--font-size);
+    color: var(--text-color);
+    border-color: var(--primary-color);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  input {
+    font-family: 'TT Lakes';
+    font-size: var(--font-size);
+    color: var(--text-color);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  input:focus,
+  .textarea-form:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+
+  .textarea-form {
+    width: 288px;
+    height: 118px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: TT Lakes;
+    font-size: var(--font-size);
+    color: rgba(181, 182, 188, 1);
+  }
+
+  .input-form {
+    width: 288px;
+    height: 48px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .privacy-policy {
+    font-size: 14px;
+  }
+
+  .privacy-policy-link {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn-submit-form-wrap {
+    position: absolute;
+    right: 0;
+    max-width: 460px;
+
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 16px 0px 52px 0px #0e185033, -2px 0px 4px 0px #454f7e05;
+  }
+
+  .modal-content2 {
+    position: fixed;
+    padding: 0 20px;
+    top: 0;
+    right: 0;
+    max-width: 400px;
+    height: 100vh;
+    background-color: #fff;
+    border-left: 1px solid rgba(65, 246, 216, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .brd3 {
+  }
+
+  .burger1_img {
+    margin-top: -20px;
+  }
+  .title__text1 {
+    padding: 0 20px;
+    border-left: 3px solid var(--secondary-color);
+  }
+
+  .phone-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 380px;
+    padding: 10px 10px;
+    height: 48px;
+  }
+
+  .phone-input select {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-right: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .phone-input input[type='tel'] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .phone-input input[type='tel']::placeholder {
+    color: var(--text-color);
+  }
+
+  .input-form-ph {
+    width: 18%;
+    font-family: TT Lakes;
+    font-size: var(--font-size);
+    color: var(--text-color);
+    border-color: var(--primary-color);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  input {
+    font-family: 'TT Lakes';
+    font-size: var(--font-size);
+    color: var(--text-color);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  input:focus,
+  .textarea-form:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+
+  .textarea-form {
+    width: 376px;
+    height: 118px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'TT Lakes';
+    font-size: var(--font-size);
+    color: rgba(181, 182, 188, 1);
+  }
+
+  .input-form {
+    width: var(--input-width);
+    height: 48px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .privacy-policy {
+    font-size: 14px;
+  }
+
+  .privacy-policy-link {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn-submit-form-wrap {
+    position: absolute;
+    right: 0;
+    max-width: 460px;
+    height: 100vh;
+    margin-right: 40px;
+  }
+
+  .burger3,
+  .burger4 {
+    position: absolute;
+    left: -100px;
+    margin: 30px 20px;
+    background-color: #fff;
+    border: none;
+  }
+}

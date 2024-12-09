@@ -1,0 +1,148 @@
+@media (width <= 768px) {
+  .swiper-container-2 {
+    .swiper-wrapper {
+      display: flex;
+      flex-direction: row;
+      margin-left: -20px;
+    }
+  }
+  .swiper-slide {
+    flex: 0 0 auto;
+    gap: 24px 16px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  .gradient2 {
+    height: 180px;
+    width: 100vw;
+    position: absolute;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      #f8f8f8e7
+    );
+    z-index: 100;
+  }
+
+  .device-type-card {
+    width: 240px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: 20px;
+  }
+
+  .device-type-card__text {
+    margin: 0;
+    color: var(--text-color);
+    font-family: 'TT Lakes';
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-medium);
+  }
+  .tablet-image,
+  .notebook-image,
+  .PK-image,
+  .screen-image {
+    max-height: 100px;
+    object-fit: contain;
+    height: 100px;
+    width: 143px;
+  }
+  .go-image {
+    bottom: 10px;
+    right: 10px;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+@media (min-width: 769px) {
+  .swiper-wrapper {
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+    margin-top: 20px;
+    overflow-x: scroll;
+  }
+
+  .swiper-slide {
+    flex: 0 0 auto;
+    gap: 24px 16px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+  .device-type-card {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px;
+  }
+
+  .device-type-card__text {
+    margin: 0;
+    color: var(--text-color);
+    font-family: 'TT Lakes';
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-medium);
+  }
+  .tablet-image,
+  .notebook-image,
+  .PK-image,
+  .screen-image {
+    max-height: 100px;
+    object-fit: contain;
+    height: 100px;
+    width: 143px;
+  }
+  .go-image {
+    bottom: 10px;
+    right: 10px;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (width >= 1120px) {
+  .swiper-wrapper {
+    display: flex;
+    gap: 16px;
+    margin-left: -16px;
+    margin-top: 20px;
+  }
+
+  .device-type-card {
+    width: 240px;
+  }
+
+  .tablet-image,
+  .notebook-image,
+  .PK-image,
+  .screen-image {
+    width: 170px;
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "src/fonts"
+		},
+		{
+			"path": "src/img"
+		},
+		{
+			"path": "src/js"
+		},
+		{
+			"path": "src/scss"
+		}
+	]
+}

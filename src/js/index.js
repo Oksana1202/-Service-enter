@@ -1,0 +1,8 @@
+import './main.js'
+import './swiper2.js'
+import './swiper3.js'
+import './Modal_call.js'
+import './Modal_feedback.js'
+import './show-more.js'
+import '../scss/index.scss'
+import './img.js'

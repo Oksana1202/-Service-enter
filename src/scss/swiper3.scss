@@ -1,0 +1,124 @@
+@media (width <= 768px) {
+  .price price--mg {
+    height: 100vh;
+  }
+  /* .service-slider {
+    display: flex;
+    overflow-x: auto;
+  } */
+  .swiper-container-3 {
+    width: 100vw;
+    overflow: hidden;
+    font-size: var(--font-size-small);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    .swiper-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+    .swiper-slide {
+      width: 240px;
+      flex: 0 0 auto;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-decoration: none;
+      position: relative;
+      font-size: var(--font-size-medium);
+      border: 1px solid var(--border-color);
+      background-color: white;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+
+  .gradient2,
+  .gradient3 {
+    height: 180px;
+    width: 100vw;
+    position: absolute;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      #f8f8f8e7
+    );
+    z-index: 100;
+  }
+
+  .service-slider__content {
+    flex: 1;
+  }
+
+  .services_title_text {
+    margin: unset;
+    padding: 0 10px;
+  }
+  .service-slider__title {
+    font-family: "TT Lakes";
+    font-size: var(--font-size-medium);
+    color: var(--text-color-primary);
+    margin: unset;
+    gap: 6px;
+  }
+
+  .service-slider__text {
+    margin: 0;
+    font-family: "TT Lakes";
+    color: var(--text-color);
+  }
+
+  .service-slider_img {
+    width: 119px;
+    height: 32px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .btn-order {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: var(--button-color);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .conditions {
+    margin-top: 20px;
+    color: rgba(27, 28, 33, 1);
+  }
+  .text-image-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-conditions {
+    font-family: "TT Lakes";
+    font-size: var(--font-size-medium);
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .offer-icon {
+    margin-left: 5px;
+  }
+}
+@media (min-width: 769px) {
+  .service-slider {
+    display: none;
+  }
+}
+@media (width >= 1120px) {
+  .service-slider {
+    display: none;
+  }
+}
