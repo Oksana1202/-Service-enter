@@ -1,12 +1,13 @@
-const showMoreBtn = document.getElementById('showMoreBtn')
-const hiddenTabletSlides = document.querySelectorAll('.hidden-tablet')
-const hiddenDesktopSlides = document.querySelectorAll('.hidden-desktop')
+const showMoreBtn2 = document.getElementById('showMoreBtn2')
+const hiddenTabletSlides = document.querySelectorAll('.hidden-tablet2')
+const hiddenDesktopSlides = document.querySelectorAll('.hidden-desktop2')
+let isExpanded = false
 
-let isExpanded = localStorage.getItem('isExpanded') === 'true'
-
+// Функция для обновления видимости элементов
 function updateVisibility() {
   const windowWidth = window.innerWidth
 
+  // Скрываем или показываем элементы в зависимости от ширины окна
   if (windowWidth <= 769) {
   } else if (windowWidth > 769 && windowWidth < 1440) {
     hiddenTabletSlides.forEach((slide) => {
@@ -26,21 +27,17 @@ function updateVisibility() {
   }
 }
 
+// Функция для обновления текста кнопки
 function updateButtonText() {
-  const buttonText = showMoreBtn.querySelector('.show-more_text')
+  const buttonText = showMoreBtn2.querySelector('.show-more_text2')
   buttonText.innerText = isExpanded ? 'Скрыть' : 'Показать все' // Обновляем текст кнопки
 }
 
-function updateButtonMoreImg() {
-  showMoreImg.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' // Поворачиваем изображение
-}
-
-showMoreBtn.addEventListener('click', function () {
+// Обработчик события для кнопки
+showMoreBtn2.addEventListener('click', function () {
   isExpanded = !isExpanded // Переключаем состояние
   updateVisibility() // Обновляем видимость
   updateButtonText() // Обновляем текст кнопки
-
-  localStorage.setItem('isExpanded', isExpanded) // Сохраняем состояние в localStorage
 })
 
 // Инициализация видимости при загрузке страницы

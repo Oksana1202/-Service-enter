@@ -93,6 +93,8 @@
 
 .end_footer {
   margin-left: 20px;
+  position: absolute;
+  bottom: 0;
 }
 
 .end_footer_buttons {
@@ -161,12 +163,13 @@
     color: #7e7e82;
   }
 }
-
-@media (width >= 1120px) {
+@media (min-width: 1440px) {
   .page-container {
     display: flex;
     flex-direction: row;
     max-width: 1440px;
+    z-index: 1;
+    background-color: #ffffff;
   }
   .main_burger {
     position: static;

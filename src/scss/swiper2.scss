@@ -1,25 +1,43 @@
 @media (width <= 768px) {
-  .swiper-container-2 {
-    .swiper-wrapper {
-      display: flex;
-      flex-direction: row;
-      margin-left: -20px;
-    }
+  .content-inner-wrapper {
+    width: 100vw;
+    background-color: #f8f8f8;
+    align-items: flex-start;
   }
-  .swiper-slide {
-    flex: 0 0 auto;
-    gap: 24px 16px;
-    border-radius: 6px;
+  .swiper-container-2 {
+    width: 320px;
+    color: var(--text-color);
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-right: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0) 100%
+    );
+    .swiper-wrapper {
+      padding: 16px 0;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 16px;
+    }
+    .swiper-slide {
+      width: 240px;
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-decoration: none;
+    }
   }
 
   .gradient2 {
-    height: 180px;
-    width: 100vw;
+    height: 25vh;
+    width: 80%;
     position: absolute;
+    right: 0;
     background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
@@ -31,7 +49,6 @@
   }
 
   .device-type-card {
-    width: 240px;
     height: 160px;
     display: flex;
     flex-direction: column;
@@ -42,7 +59,6 @@
     background-color: white;
     border-radius: 6px;
     padding: 10px;
-    margin-left: 20px;
   }
 
   .device-type-card__text {
@@ -71,12 +87,16 @@
   }
 }
 @media (min-width: 769px) {
+  .content-inner-wrapper {
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 51px;
+  }
   .swiper-wrapper {
-    display: flex;
-    gap: 16px;
-    overflow-x: scroll;
-    margin-top: 20px;
-    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 16px 0;
   }
 
   .swiper-slide {
@@ -87,6 +107,9 @@
     flex-direction: column;
     justify-content: space-between;
     text-decoration: none;
+  }
+  .gradient2 {
+    display: none;
   }
   .device-type-card {
     height: 160px;
@@ -115,7 +138,6 @@
     max-height: 100px;
     object-fit: contain;
     height: 100px;
-    width: 143px;
   }
   .go-image {
     bottom: 10px;
@@ -125,24 +147,17 @@
     bottom: 10px;
     right: 10px;
   }
+  .hidden {
+    display: none;
+  }
 }
 
-@media (width >= 1120px) {
+@media (min-width: 1440px) {
   .swiper-wrapper {
-    display: flex;
-    gap: 16px;
-    margin-left: -16px;
-    margin-top: 20px;
-  }
-
-  .device-type-card {
-    width: 240px;
-  }
-
-  .tablet-image,
-  .notebook-image,
-  .PK-image,
-  .screen-image {
-    width: 170px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px 30px;
+    margin: 20px 0;
+    padding: 10px 0;
   }
 }

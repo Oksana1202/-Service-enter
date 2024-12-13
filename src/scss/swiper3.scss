@@ -1,19 +1,27 @@
 @media (width <= 768px) {
   .price price--mg {
     height: 100vh;
-  }
-  /* .service-slider {
-    display: flex;
-    overflow-x: auto;
-  } */
-  .swiper-container-3 {
     width: 100vw;
-    overflow: hidden;
+    background-color: #f8f8f8;
+    align-items: flex-start;
+  }
+
+  .swiper-container-3 {
+    width: 320px;
+    color: var(--text-color);
     font-size: var(--font-size-small);
-    font-style: normal;
-    font-weight: 400;
+    line-height: 24px;
     letter-spacing: -0.2px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0) 100%
+    );
     .swiper-wrapper {
+      padding: 16px 0;
       display: flex;
       flex-direction: row;
       gap: 16px;
@@ -35,17 +43,17 @@
     }
   }
 
-  .gradient2,
   .gradient3 {
-    height: 180px;
-    width: 100vw;
+    height: 25vh;
+    width: 80%;
     position: absolute;
+    right: 0;
     background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
-      #f8f8f8e7
+      #f8f8f8
     );
     z-index: 100;
   }
@@ -59,7 +67,7 @@
     padding: 0 10px;
   }
   .service-slider__title {
-    font-family: "TT Lakes";
+    font-family: 'TT Lakes';
     font-size: var(--font-size-medium);
     color: var(--text-color-primary);
     margin: unset;
@@ -68,7 +76,7 @@
 
   .service-slider__text {
     margin: 0;
-    font-family: "TT Lakes";
+    font-family: 'TT Lakes';
     color: var(--text-color);
   }
 
@@ -99,7 +107,7 @@
   }
 
   .btn-conditions {
-    font-family: "TT Lakes";
+    font-family: 'TT Lakes';
     font-size: var(--font-size-medium);
     color: var(--text-color);
     text-decoration: none;
@@ -113,11 +121,24 @@
   }
 }
 @media (min-width: 769px) {
+  .price-table {
+    border-collapse: collapse;
+    border: none;
+    width: 100vw;
+  }
+
   .service-slider {
     display: none;
   }
+  .gradient3 {
+    display: none;
+  }
 }
-@media (width >= 1120px) {
+
+@media (min-width: 1440px) {
+  .price-table {
+    width: 100%;
+  }
   .service-slider {
     display: none;
   }

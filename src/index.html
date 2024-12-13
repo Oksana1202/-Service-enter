@@ -343,11 +343,8 @@
         </article>
         <div class="services">
           <h2 class="brand-slider__title">Ремонт техники различных брендов</h2>
-          <span class="overlay overlay--services"></span>
-
           <div class="swiper-container">
-            <div class="swiper-wrapper gradient1">
-              <div class="gradient"></div>
+            <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="brand-slider__item brand-slider__item--highlight">
                   <img src="./img/Lenovo.svg" alt="Lenovo" />
@@ -415,6 +412,7 @@
                 </div>
               </div>
             </div>
+            <div class="gradient1"></div>
             <div id="swiper-pagination" class="swiper-pagination"></div>
           </div>
           <button class="show-more" id="showMoreBtn">
@@ -423,8 +421,9 @@
           </button>
         </div>
         <div class="content-inner-wrapper">
+          <h2 class="brand-slider__title">Ремонт различных видов техники</h2>
+          <div class="gradient2"></div>
           <div class="swiper-container-2">
-            <h2 class="brand-slider__title">Ремонт различных видов техники</h2>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="#" class="device-type-card">
@@ -471,7 +470,7 @@
                   />
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hidden-tablet2">
                 <a href="#" class="device-type-card">
                   <p class="device-type-card__text">Ремонт мониторов</p>
                   <img
@@ -486,6 +485,36 @@
                   />
                 </a>
               </div>
+              <div class="swiper-slide hidden-desktop2">
+                <a href="#" class="device-type-card">
+                  <p class="device-type-card__text">Ремонт планшетов</p>
+                  <img
+                    class="device-type-card__image tablet-image"
+                    src="./img/tablet.jpg"
+                    alt="Иконка планшетов"
+                  />
+                  <img
+                    class="device-type-card__image go-image"
+                    src="./img/go.svg"
+                    alt="Иконка для ремонта планшетов"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide hidden-desktop2">
+                <a href="#" class="device-type-card">
+                  <p class="device-type-card__text">Ремонт ПК</p>
+                  <img
+                    class="device-type-card__image PK-image"
+                    src="./img/PK.jpg"
+                    alt="Иконка для ремонта ПК"
+                  />
+                  <img
+                    class="device-type-card__image go-image"
+                    src="./img/go.svg"
+                    alt="Иконка для ремонта ПК"
+                  />
+                </a>
+              </div>
             </div>
             <button class="show-more2" id="showMoreBtn2">
               <img class="show-more_img2" src="./img/more.svg" alt="more" />
@@ -497,7 +526,6 @@
         <div class="price price--mg">
           <h2 class="brand-slider__title">Цены на услуги</h2>
           <div class="service-slider swiper-container-3">
-            <div class="gradient3"></div>
             <div class="swiper-wrapper" id="swiper-wrapper-3">
               <div class="swiper-slide">
                 <div class="services_title_text">
@@ -612,6 +640,7 @@
                 </div>
               </div>
             </div>
+            <div class="gradient3"></div>
             <div id="swiper-pagination" class="swiper-pagination"></div>
           </div>
           <table class="price-table">
